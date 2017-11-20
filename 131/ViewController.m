@@ -19,6 +19,13 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.view.backgroundColor=[UIColor redColor];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame = CGRectMake(100, 100, 50, 30);
+    [button setTitle:@"跳转" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+
 }
 
 
